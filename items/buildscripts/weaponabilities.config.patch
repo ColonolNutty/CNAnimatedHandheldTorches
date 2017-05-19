@@ -1,0 +1,7 @@
+[
+	{
+		"op": "add",
+		"path": "/cnstorchcombo",
+		"value": "/items/active/misc/cnstorch/cnstorchcombo.weaponability"
+	}
+]
