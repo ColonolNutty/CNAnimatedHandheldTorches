@@ -56,7 +56,7 @@ function CnsTorchSecondary:update(dt, fireMode, shiftHeld)
     self.aimAngle, self.facingDirection = activeItem.aimAngleAndDirection(0, self.aim)
     
     activeItem.setScriptedAnimationParameter("previewPosition", self.visual)
-    local isValid = true
+    local isValid = world.tileIsOccupied(self.aim, false, false)
     activeItem.setScriptedAnimationParameter("previewValid", isValid)
     for i,vec in ipairs(self.placementBounds) do
       if isValid then

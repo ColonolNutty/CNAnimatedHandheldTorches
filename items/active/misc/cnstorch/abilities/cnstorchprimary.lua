@@ -77,6 +77,7 @@ end
 
 -- State: fire
 function CnsTorchPrimary:fire()
+  storage.isInPlaceMode = false
   activeItem.setScriptedAnimationParameter("isInPlaceMode", false)
   if animator.animationState("flame") == "off" then
     self.weapon:setStance(self.stances.idle)
