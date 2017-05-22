@@ -1,13 +1,4 @@
 {
-  "animationParts" : { },
-  "animationCustom" : {
-    "sounds" : {
-      "idle" : [ ],
-      "fire" : [ ],
-      "fire2" : [ ]
-    }
-  },
-
   "ability" : {
     "name" : "Place Torch",
     "type" : "cnstorchsecondary",
