@@ -1,0 +1,256 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "flame" : {
+        "default" : "off",
+        "states" : {
+          "idle" : {
+            "frames" : 4,
+            "cycle" : 0.5,
+            "mode" : "loop",
+            "properties" : {
+              "particleEmittersOn" : [ "embers" ]
+            }
+          },
+          "fire" : {
+            "frames" : 1,
+            "cycle" : 0.08,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "off" : {
+            "frames" : 1,
+            "properties" : {
+              "particleEmittersOff" : [ "embers" ]
+            }
+          }
+        }
+      },
+      "body" : {
+        "default" : "off",
+        "states" : {
+          "idle" : {
+            "frames" : 4,
+            "cycle" : 0.5,
+            "mode" : "loop"
+          },
+          "fire" : {
+            "frames" : 1,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "off" : {
+            "frames" : 1,
+            "cycle" : 1
+          }
+        }
+      },
+      "swoosh" : {
+        "default" : "off",
+        "states" : {
+          "idle" : {
+          },
+          "fire" : {
+            "frames" : 1,
+            "cycle" : 0.08,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "off" : {
+            "frames" : 1,
+            "cycle" : 1
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "weaponfullbright" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "fullbright" : true,
+          "image" : "",
+          "offset" : [0, 0.7],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0]
+        }
+      },
+      "flame" : {
+        "properties" : {
+          "zLevel" : 2,
+          "centered" : true,
+          "fullbright" : true,
+          "image" : "",
+          "offset" : [0, 0.9],
+          "transformationGroups" : ["weapon", "flame"],
+          "rotationCenter" : [0, 0]
+        },
+
+        "partStates" : {
+          "flame" : {
+            "idle" : {
+              "properties" : {
+                "image" : "/items/active/misc/cnstorch/cnstorchflame.png:default.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "/items/active/misc/cnstorch/cnstorchflame.png:default.on"
+              }
+            },
+            "off" : {
+              "properties" : {
+                "image" : "/items/active/misc/cnstorch/cnstorchflame.png:default.off"
+              }
+            }
+          }
+        }
+      
+      },
+      "body" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "fullbright" : false,
+          "image" : "",
+          "offset" : [0, 0],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0]
+        },
+
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "/items/active/misc/cnstorch/onehanded/cnsbody.png:default.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "/items/active/misc/cnstorch/onehanded/cnsbody.png:default.on"
+              }
+            },
+            "off" : {
+              "properties" : {
+                "image" : "/items/active/misc/cnstorch/onehanded/cnsbody.png:default.off"
+              }
+            }
+          }
+        }
+      },
+      "swoosh" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "transformationGroups" : ["swoosh"],
+          "rotationCenter" : [0, 0]
+        },
+
+        "partStates" : {
+          "swoosh" : {
+            "idle" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "/items/active/misc/cnstorch/swoosh/torchswoosh.png:<frame>",
+                "offset" : [-0.7, 1.6],
+                "damageArea" : [[-1.25, 0.75], [-2.25, 2.25], [-1, 2.25], [0.25, 2.25], [2, 1.5], [3.25, -0.125], [3.25, -1.25], [2.5, -2.5], [1.0, -2.5]]
+              }
+            },
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "swoosh" : {},
+    "flame" : {}
+  },
+
+  "particleEmitters" : {
+    "physicalswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 40,
+      "offsetRegion" : [0.25, -0.25, 2.0, 4.5],
+      "particles" : [ ]
+    },
+    "fireswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 40,
+      "offsetRegion" : [1.25, -0.25, 1.0, 4.5],
+      "particles" : [
+        { "particle" : "fireswoosh1"},
+        { "particle" : "fireswoosh2"},
+        { "particle" : "fireswoosh3"},
+        { "particle" : "fireswoosh1"},
+        { "particle" : "fireswoosh2"},
+        { "particle" : "fireswoosh3"}
+      ]
+    },
+    "embers" : {
+      "active" : false,
+      "emissionRate" : 1.0,
+      "emissionRateVariance" : 0.5,
+
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "ember",
+            "position" : [0, 1.125],
+            "size" : 1.0,
+            "color" : [255, 100, 0, 255],
+            "light" : [150, 50, 50],
+            "fade" : 0.9,
+            "initialVelocity" : [0.0, 5.0],
+            "finalVelocity" : [0.0, -50.0],
+            "approach" : [0, 20],
+            "timeToLive" : 0.6,
+            "layer" : "middle",
+            "variance" : {
+              "initialVelocity" : [1.5, 2.0]
+            }
+          }
+        }
+      ]
+    }
+  },
+
+  "lights" : {
+    "light" : {
+      "active" : false,
+      "position" : [0.0, 0.0],
+      "color" : [179, 149, 107],
+
+      "flickerPeriod" : 0.3,
+      "flickerMinIntensity" : 0.95,
+      "flickerMaxIntensity" : 1,
+      "flickerPeriodVariance" : 0.075,
+      "flickerIntensityVariance" : 0.025
+    }
+  },
+
+  "sounds" : {
+      "on" : [ "/sfx/objects/torch_on1.ogg", "/sfx/objects/torch_on2.ogg" ],
+      "idle": [ "/sfx/objects/torch.ogg" ],
+      "fire" : [ ],
+      "off" : [ "/sfx/objects/torch_off1.ogg", "/sfx/objects/torch_off2.ogg", "/sfx/objects/torch_off3.ogg" ]
+  }
+}

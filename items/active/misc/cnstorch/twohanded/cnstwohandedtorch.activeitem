@@ -1,0 +1,58 @@
+{
+  "itemName" : "cnstwohandedtorch",
+  "level" : 1,
+  "price" : 10,
+  "maxStack" : 1000,
+  "rarity" : "Common",
+  "description" : "A flickering two-handed torch. Let's me place torches on the wall (Primary Ability: Melee/Cancel placement)",
+  "shortdescription" : "Two-Handed Handheld torch",
+  "tooltipKind" : "tool",
+  "category" : "Tool",
+  "pointable" : true,
+  "twoHanded" : true,
+  "itemTags" : ["weapon", "melee", "torch", "light"],
+
+  "maximumLiquidLevel" : 0.2,
+  "defaultLightState" : "off",
+
+  "largeImage" : "cnstwohandedtorchbig.png",
+  "inventoryIcon" : "cnstwohandedtorchicon.png",
+
+  "scripts" : ["/items/active/misc/cnstorch/scripts/cnstorchmain.lua"],
+  "animationScripts" : ["/items/active/misc/cnstorch/scripts/placementpreview.lua"],
+
+  "animation" : "/items/active/misc/cnstorch/twohanded/cnstwohandedtorch.animation",
+
+  "elementalType" : "fire",
+
+  "primaryAbilityType" : "cnstorchprimary",
+  "primaryAbility" : {
+    "fireTime" : 0.1,
+    "baseDps" : 15.0,
+
+    "stances" : {
+      "idle" : {
+        "twoHanded" : true
+      },
+      "windup" : {
+        "weaponOffset" : [0.3, 0.0],
+        "twoHanded" : true
+      },
+      "fire" : {
+        "weaponOffset" : [0.0, 0.5],
+        "twoHanded" : true
+      }
+    }
+  },
+
+  "altAbilityType" : "cnstorchsecondary",
+  
+
+  "placementRange" : 10,
+  "placementBounds" : [[0, 0], [0, 1]],
+  "previewImage" : "/objects/generic/torch/torch.png",
+  "placeObject": "torch",
+  "consumeItemOnPlace": "cnstwohandedtorch",
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

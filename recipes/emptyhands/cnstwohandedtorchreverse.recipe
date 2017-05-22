@@ -1,6 +1,6 @@
 {
   "input" : [
-    { "item" : "cnstorch", "count" : 1 }
+    { "item" : "cnstwohandedtorch", "count" : 1 }
   ],
   "output" : { "item" : "torch", "count" : 1 },
   "duration": 0.0,

@@ -1,7 +1,12 @@
 [
 	{
 		"op": "add",
-		"path": "/cnstorchcombo",
-		"value": "/items/active/misc/cnstorch/cnstorchcombo.weaponability"
+		"path": "/cnstorchprimary",
+		"value": "/items/active/misc/cnstorch/abilities/cnstorchprimary.weaponability"
+	},
+	{
+		"op": "add",
+		"path": "/cnstorchsecondary",
+		"value": "/items/active/misc/cnstorch/abilities/cnstorchsecondary.weaponability"
 	}
 ]

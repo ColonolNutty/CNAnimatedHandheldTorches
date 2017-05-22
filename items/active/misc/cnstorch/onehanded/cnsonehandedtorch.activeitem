@@ -1,0 +1,34 @@
+{
+  "itemName" : "cnsonehandedtorch",
+  "level" : 1,
+  "price" : 10,
+  "maxStack" : 1000,
+  "rarity" : "Common",
+  "description" : "A flickering one-handed torch. It lights up the area.",
+  "shortdescription" : "One-Handed Handheld torch",
+  "tooltipKind" : "tool",
+  "category" : "Tool",
+  "pointable" : true,
+  "twoHanded" : false,
+  "itemTags" : ["weapon", "melee", "torch", "light"],
+
+  "maximumLiquidLevel" : 0.2,
+  "defaultLightState" : "off",
+
+  "largeImage" : "cnsonehandedtorchbig.png",
+  "inventoryIcon" : "cnsonehandedtorchicon.png",
+
+  "scripts" : ["/items/active/misc/cnstorch/scripts/cnstorchmain.lua"],
+
+  "animation" : "/items/active/misc/cnstorch/onehanded/cnsonehandedtorch.animation",
+
+  "elementalType" : "fire",
+
+  "primaryAbilityType" : "cnstorchprimary",
+  "primaryAbility" : {
+    "fireTime" : 0.1,
+    "baseDps" : 10.0
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

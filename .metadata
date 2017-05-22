@@ -1,9 +1,9 @@
 {
   "author" : "ColonolNutty",
-  "description" : "Torches you can hold! Craft them from normal torches This is also going to help the community out by showing that animated melee 'weapons' are possible\n\nIf you'd like a prettier description, check out the Chucklefish forums mod page here: http://community.playstarbound.com/resources/cn-animated-handheld-torches.4717/\n\nAnd if you'd like to feel the gruesome reality of surviving, check out this mod here:\nCN - Survivalist Mod: Resurrection\nhttp://community.playstarbound.com/resources/cn-survalist-mod-resurrection.4536/",
+  "description" : "Torches you can hold! There are both one handed and two handed, each with their own abilities\n\nIf you'd like a prettier description, check out the Chucklefish forums mod page here: http://community.playstarbound.com/resources/cn-animated-handheld-torches.4717/\n\nFeatures:\n- One Handed torches (Primary: melee slash, inflicts burn)\n- Two Handed torches (Primary: melee slash, inflicts burn; Secondary: Placement mode)\n\nFAQ:\nQ: How can I get either of the torches?\nA: You craft them from a vanilla torch, using your empty hands (C key by default)\n\nQ: How do I place the torches on walls?\nA: Only the Two Handed torch can be used to place torches on walls, you enter placement mode by firing the alternate ability (Right click by default), fire again to place a torch (right click again) and you cancel placement mode by using the primary ability (Left click by default)\n\n\nAnd if you'd like to feel the gruesome reality of surviving, check out this mod here:\nCN - Survivalist Mod: Resurrection\nhttp://community.playstarbound.com/resources/cn-survalist-mod-resurrection.4536/",
   "friendlyName" : "CN - Animated Handheld Torches",
   "link" : "steam://url/CommunityFilePage/928770236",
   "name" : "CNAnimatedHandheldTorches",
   "steamContentId" : "928770236",
-  "version" : "v1.0.1"
+  "version" : "v2.0.0"
 }

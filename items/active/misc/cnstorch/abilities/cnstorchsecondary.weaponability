@@ -1,0 +1,73 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "sounds" : {
+      "idle" : [ ],
+      "fire" : [ ],
+      "fire2" : [ ]
+    }
+  },
+
+  "ability" : {
+    "name" : "Place Torch",
+    "type" : "cnstorchsecondary",
+    "scripts" : ["/items/active/misc/cnstorch/abilities/cnstorchsecondary.lua"],
+    "class" : "CnsTorchSecondary",
+
+    "swooshOffsetRegions" : [
+      [-1.0, -0.25, 2.5, 2.0]
+    ],
+    
+    "edgeTriggerGrace" : 0.25,
+
+    "fireTime" : 0.01,
+    "energyUsage": 0.1,
+    "baseDps" : 0.0,
+
+    "damageConfig" : {
+      "damageSourceKind" : "NoDamage",
+      "statusEffects" : [ ],
+      "knockbackMode" : "facing",
+      "timeout" : 0.5
+    },
+    
+    "stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 0
+      }
+    ],
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponOffset" : [0, 0],
+
+        "allowFlip" : true,
+        "allowRotate" : true,
+        "twoHanded" : true
+      },
+      "windup" : {
+        "duration" : 0.05,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponOffset" : [0, 0],
+
+        "allowFlip" : true,
+        "allowRotate" : true,
+        "twoHanded" : true
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponOffset" : [0, 0],
+
+        "allowFlip" : true,
+        "allowRotate" : true,
+        "twoHanded" : true
+      }
+    }
+  }
+}
