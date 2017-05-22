@@ -146,7 +146,7 @@
       },
       "swoosh" : {
         "properties" : {
-          "zLevel" : 0,
+          "zLevel" : 3,
           "centered" : true,
           "transformationGroups" : ["swoosh"],
           "rotationCenter" : [0, 0]
