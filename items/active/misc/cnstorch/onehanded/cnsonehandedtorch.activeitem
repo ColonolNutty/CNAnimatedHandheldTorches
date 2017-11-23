@@ -5,7 +5,7 @@
   "maxStack" : 1000,
   "rarity" : "Common",
   "description" : "This torch flickers softly. Can be held in one hand.",
-  "shortdescription" : "Torch (Handheld, 1H)",
+  "shortdescription" : "Torch - Handheld 1H",
   "tooltipKind" : "tool",
   "category" : "Tool",
   "pointable" : true,
